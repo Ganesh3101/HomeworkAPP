@@ -1,5 +1,3 @@
-import page
-
 import streamlit
 
 import streamlit as st
@@ -66,7 +64,7 @@ if uploaded_file:
     elif "image" in file_type:
         try:
             image = Image.open(uploaded_file)
-            st.sidebar.image(image, caption="Uploaded Image", use_column_width=True)
+            st.sidebar.image(image, caption="Uploaded Image", use_container_width=True)
         except Exception as e:
             st.error(f"Error opening image: {e}")
 
