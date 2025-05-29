@@ -74,7 +74,7 @@ if uploaded_file:
         if extracted_text:
             st.text_area("Content", value=extracted_text, height=400)
         elif "image" in file_type:
-            st.image(image, caption="Uploaded Image", use_column_width=True)
+            st.image(image, caption="Uploaded Image", use_container_width=True)
 
     # Generate AI-powered suggestions
     with col2:
