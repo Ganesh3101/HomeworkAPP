@@ -1,5 +1,3 @@
-import page
-
 import streamlit
 
 import streamlit as st
